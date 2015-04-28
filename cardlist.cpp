@@ -41,12 +41,12 @@ void CardList::pushFront(const int cardId)
     m_pHeadNode = newNode;
 }
 
-char CardList::popFront()
+int CardList::popFront()
 {
     if(!m_pHeadNode)
         return '0';
 
-    char data = m_pHeadNode->cardId;
+    int data = m_pHeadNode->cardId;
     CardNode *node = m_pHeadNode;
     m_pHeadNode = node->next;
     delete node;

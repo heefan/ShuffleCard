@@ -22,7 +22,7 @@ public:
     ~CardList();
 
     void pushFront(const int cardId);
-    char popFront();
+    int popFront();
     void pushBack(const int cardId);
     void popBack(); /* reserve */
 
