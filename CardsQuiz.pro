@@ -11,7 +11,6 @@ include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
-    card.h \
     helper.h \
     icardoperation.h \
     cardlist.h

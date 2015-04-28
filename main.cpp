@@ -22,14 +22,11 @@ int main(int argc, char * argv[])
     CardList * pCardsInHand = new CardList(cardCount);
     ICardOperation cardsOperation;
 
-//    pCardsInHand->print();
-//    DLOG("cards in hand %s\n", pCardsInHand->listString().c_str());
-
     int rounds = cardsOperation.yeildRoundsWhenSameWithOriginalInHand(pCardsInHand, pCardsOnTable);
     DLOG("rounds : %d\n", rounds);
 
     delete pCardsOnTable;
-//    delete pCardsInHand;
+    delete pCardsInHand;
 
     return 0;
 }

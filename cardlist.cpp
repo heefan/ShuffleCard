@@ -100,7 +100,7 @@ string CardList::listString() const
     while(current) {
         std::ostringstream ss;
         ss << current->cardId;
-        cardsString.append(ss.str());
+        cardsString.append(ss.str() + " ");
         current = current->next;
     }
     return cardsString;
